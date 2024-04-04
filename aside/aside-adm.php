@@ -28,19 +28,15 @@
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Sistema 1</a>
+                            <a href="#" class="sidebar-link">Certificado</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"> Sistema 2 </a>
+                            <a href="#" class="sidebar-link"> Controle de Usuários </a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
-                        <i class="lni lni-layout"></i>
-                        <span>Certificados</span>
-                    </a>
+                    
                     <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
@@ -58,12 +54,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Notificação</span>
-                    </a>
-                </li>
+                
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-cog"></i>
