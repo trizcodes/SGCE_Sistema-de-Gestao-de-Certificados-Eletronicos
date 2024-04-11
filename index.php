@@ -10,9 +10,9 @@
 
     <body class="d-flex align-items-center py-4 bg-body-tertiary">
         <main class="w-100 m-auto form-container">
-
+            
         
-            <form action="login.php" method="$_POST">
+            <form action="login.php" method="post">
 
 
 
@@ -21,8 +21,8 @@
                 <div class="form-floating">
 
 
-                    <input type="email" class="form-control" id="floatinInput" placeholder="E-mail">
-                    <label for="floatinInput">E-mail</label>
+                    <input type="text" class="form-control" id="username" placeholder="Nome de Usuário">
+                    <label for="username">Nome de Usúario</label>
 
 
                 </div>
@@ -31,9 +31,8 @@
                 <div class="form-floating mt-2">
 
 
-                    <input type="password" class="form-control" id="floatinInput" placeholder="Senha">
-                    <label for="floatinInput">Senha</label>
-
+                    <input type="password" class="form-control" id="password" placeholder="Senha">
+                    <label for="password">Senha</label>
 
                 </div>
 
@@ -41,7 +40,7 @@
                     <p>Não tem uma conta? <a href="">Aperte aqui para criar</a></p>
                 </div>
 
-                <button class="btn btn-primary w-100 py-2"> Entrar </button>
+                <button class="btn btn-primary w-100 py-2" type="submit"> Entrar </button>
                 <p class="text-body-secondary mt-5 mb-3">© 2024 - Trizcodes </p>
 
 
