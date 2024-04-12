@@ -1,24 +1,35 @@
-## Sistema de Gestão de Certificado Eletrônico - EM DESENVOLVIMENTO
+## Sistema de Gestão de Certificado Eletrônico - ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-Para o desenvolvimento desse sistema utilizei o padrão de arquitetura MVC 
+# Índice 
 
-Model ( Classes )
-- Connect -  dentro da connet vamos usar PDO:: PHP DATA Object que é uma classe responsavel pela conexão com o servidor e MySQL como SGBDR
-- Users
-- UsersDAO
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Status do Projeto](#status-do-Projeto) 
 
-- PDO:: PHP DATA Object
-- MySQL ( SGBDR )
+## Descrição do Projeto 
+<br>
+Sistema de certificado eletrônico que tem como objetivo emitir o certificado do usuário após o fim do evento ou a liberação do mesmo. O sistema conta com gestão de usuários caso o usuário já tenha cadastro sendo mais facil emitir seu certificado
+<h4 align="center"> 
+    ❗  Para o desenvolvimento desse sistema estou utilizando o padrão de arquitetura MVC  ❗
+</h4>
+<br>
 
+<h5> Model ( Classes ) </h5>
 
-O arquivo connect não pode ser modificado pois com o php 8.0 a PSR-4 é uma recomendação da comunidade PHP para organização e carregamento de arquivo e classes PHP
+- `Connect`: Dentro da Connet vamos usar PDO:: PHP DATA Object que é uma classe responsável pela conexão com o servidor e MySQL como SGBDR )
+- `Users`
+- `UsersDAO`
+- `PDO:: PHP DATA Object`
+- `PDO:: MySQL ( SGBDR )` 
+
+O arquivo `connect` não pode ser modificado pois a PSR-4 é uma recomendação da comunidade PHP para a organização e o carregamento de arquivos e classes PHP
 
 --------
 
-Class Users
+<h5> Class Users </h5>
 
-Campos: ID (Int)
-        name (Varchar)
-        mail (Varchar)
-        password (Varchar)
-        status (char)
+Temos os seguintes campos na tabela
+
+- `name`
+- `mail`
+- `password`
+- `status` 
