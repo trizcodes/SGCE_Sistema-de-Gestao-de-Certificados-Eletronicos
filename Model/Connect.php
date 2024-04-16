@@ -3,7 +3,7 @@
 
 
 // Declarando a classe
-class Connect {
+abstract class Connect {
 
     // atributo que armazena a conexão com o servidor
     private static PDO $conn;
