@@ -13,37 +13,38 @@
         <h1 class="h3 mb-3 fw-normal">Sistema de Gestão de Certificados Eletrônicos </h1>
 
         
-            <form action="processamento/processamento.php" method="post">
+            <form action="#" method="post">
 
 
 
                 <img src="#" alt="" class="mb-4" height="57" width="72">
                 <h1 class="h3 mb-3 mt-2 fw-normal"> Criar Conta </h1>
-              
-                <div class="form-floating">
 
-                    <input type="text" class="form-control" id="username" name="usuario" placeholder="Nome de Usuário">
-                    <label for="username">Nome de Usúario</label>
+                
+                <div class="form-floating mt-2">
+
+
+                    <input type="text" class="form-control" id="Mail" name="mail" placeholder="E-mail" required>
+                    <label for="Mail">E-mail</label>
+                    <div id="mailHelp" class="form-text mt-2">Nunca compatilharemos seu email com ninguém</div>
 
                 </div>
 
 
                 <div class="form-floating mt-2">
 
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Senha">
+                    <input type="password" class="form-control" name="pass" id="Pass" placeholder="Senha" 
+                        aria-describeby="passHelp" minlength="8" maxlength="20" required>
+                        <div id="mailPass" class="form-text mt-2">
+                            Sua senha deve ter de 8 a 20 caracteres, contendo letra maiúscula, número e caractere especial.
+                        </div>
                     <label for="password">Senha</label>
 
                 </div>
-
-                <div class="form-floating mt-2">
-
-                    <input type="password" class="form-control" id="confirm_password" placeholder="Confirmar Senha">
-                    <label for="confirm_password">Confirmar Senha</label>
-
-                </div>
+                
 
                 <div class="text-start my-4 ">
-                    <p>Já tem uma conta? <a href=""> Aperte aqui para entrar </a></p>
+                    <p>Já tem uma conta? <a href="" style="text-decoration: none;"> Aperte aqui para entrar </a></p>
                 </div>
 
                 <button class="btn btn-primary w-100 py-2" type="submit"> Cadastrar </button>

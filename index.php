@@ -22,7 +22,7 @@
 
 
                     <input type="text" class="form-control" id="username" placeholder="Nome de Usuário">
-                    <label for="username">Nome de Usúario</label>
+                    <label for="username">Nome de Usuário ou E-mail</label>
 
 
                 </div>

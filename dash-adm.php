@@ -58,6 +58,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-4 ">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Adicionar usuário
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUser">Adicionar usuário</button>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
 
 
                             
@@ -84,7 +98,7 @@
                                             <th scope="row">1</th>
                                             <td>Nome</td>
                                             <td>dd/mm/yy</td>
-                                            <td><button class="btn btn-danger"> Apagar Evento</button></td>
+                                            <td><button class="btn btn-danger"> Apagar Evento </button></td>
                                         </tr>
                                        
                                     </tbody>
@@ -153,7 +167,7 @@
                 </div>
             <div class="modal-body">
 
-                    <form>
+                    <form action="" method="POST">
 
 
                         <div class="mb-3">
@@ -178,6 +192,43 @@
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         <button type="button" class="btn btn-primary">Salvar Evento</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="modal fade" id="addUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Gerenciamento de Usuário - Novo usuário</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+
+                    <form action="#" method="#">
+
+
+                        <div class="mb-3">
+                            <label for="Nome" class="col-form-label">Nome:</label>
+                            <input type="text" class="form-control" id="Nome" name="nome">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="Mail" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" name="mail" id="Mail" arial-describedby="mailHelp">
+                            <div id="mailHelp" class="form-text mt-2"> Verifique se o e-mail está correto </div>
+                        </div>
+                        
+
+                    </form>
+            </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar </button>
       </div>
     </div>
   </div>
