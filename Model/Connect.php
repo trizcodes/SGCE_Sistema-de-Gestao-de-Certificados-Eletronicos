@@ -6,7 +6,7 @@
 abstract class Connect {
 
     // atributo que armazena a conexão com o servidor
-    private static $conn = "";
+    private static $conn;
 
     // Existe uma regra na orientação a objeto que só pode usar atributos estáticos se o método for estático
     // método que estabele e pega a conexão com o servidor

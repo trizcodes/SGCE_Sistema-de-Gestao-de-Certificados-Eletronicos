@@ -44,29 +44,6 @@
                         <h3 class="fw-bold fs-4 mb-3">Sistema de Gestão de Certificado Eletrônico </h3>
                         <div class="row">
 
-
-                            <div class="col-12 col-md-4 ">
-                                <div class="card border-0">
-                                    <div class="card-body py-4">
-                                        <h5 class="mb-2 fw-bold">
-                                            Evento Ativo
-                                        </h5>
-                                        <div class="mb-0">
-                                            <span class="badge text-success me-2">
-                                                Data
-                                            </span>
-                                            <span class=" fw-bold">
-                                                Nome
-                                            </span>
-                                        </div>
-                                        <p class="mb-2 fw-bold">
-                                            <button class="btn btn-outline-primary">Gerar Certificado</button> 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-
                             
                         </div>
                         <h3 class="fw-bold fs-4 my-3">Seus Certificados
@@ -100,6 +77,8 @@
                     </div>
                 </div>
             </main>
+
+            
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row text-body-secondary">

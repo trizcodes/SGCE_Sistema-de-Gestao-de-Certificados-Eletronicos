@@ -8,36 +8,25 @@
                 </div>
             </div>
             <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Perfil</span>
+
+            <li class="sidebar-item">
+                    <a href="dash-user.php" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span>Início</span>
                     </a>
                 </li>
+
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span>Agenda</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="sistema">
                         <i class="lni lni-layout"></i>
-                        <span>Certificados</span>
+                        <span> Seus Certificados </span>
                     </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Todos</a>
-                        </li>
-                        
-                    </ul>
                 </li>
                 
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="lni lni-cog"></i>
-                        <span>Configuração</span>
+                        <i class="lni lni-user"></i>
+                        <span>Perfil e Configuração</span>
                     </a>
                 </li>
             </ul>

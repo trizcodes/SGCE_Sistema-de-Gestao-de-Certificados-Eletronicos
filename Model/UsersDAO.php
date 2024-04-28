@@ -10,13 +10,14 @@ class UsersDAO extends Connect {
     //método que insere um registro na tabela
     public function addUser(Users $u) {
         //instrução SQL
-        $query = "INSERT INTO {$this-> entity} (name, mail, password) VALUES(?, ?, ?)";
+        $query = "INSERT INTO {$this-> entity} (name, mail, password, status) VALUES(?, ?, ?, ?)";
         //armazena a instrução que será executada no servidor
         $stmt = UsersDAO::prepareSQL($query);
         //pega os valores que foram passsados pelo métodos setters
         $stmt-> bindValue(1, $u -> getName());
         $stmt-> bindValue(2, $u -> getMail());
         $stmt-> bindValue(3, $u -> getPassword());
+        $stmt-> bindValue(4, $u -> getStatus());
         //executa a instrução
         return $stmt -> execute();
     }

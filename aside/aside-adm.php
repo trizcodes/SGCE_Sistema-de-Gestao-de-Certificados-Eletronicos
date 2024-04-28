@@ -9,17 +9,12 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-user"></i>
-                        <span>Perfil</span>
+                    <a href="dash-adm.php" class="sidebar-link">
+                        <i class="lni lni-home"></i>
+                        <span>Início</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span>Agenda</span>
-                    </a>
-                </li>
+               
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="sistema">
@@ -31,7 +26,7 @@
                             <a href="#" class="sidebar-link">Certificado</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link"> Controle de Usuários </a>
+                            <a href="listusers.php" class="sidebar-link"> Controle de Usuários </a>
                         </li>
                     </ul>
                 </li>
