@@ -6,7 +6,7 @@
 abstract class Connect {
 
     // atributo que armazena a conexão com o servidor
-    private static PDO $conn;
+    private static $conn = "";
 
     // Existe uma regra na orientação a objeto que só pode usar atributos estáticos se o método for estático
     // método que estabele e pega a conexão com o servidor
@@ -16,7 +16,7 @@ abstract class Connect {
         if(self::$conn == null) {
             try {
                 //instancia o objeto PDO e armazena no atributo
-                self::$conn =  new PDO("mysql:host=localhost;dbname=php_sys;porta=3306","root","127.0.0.1");
+                self::$conn =  new PDO("mysql:host=localhost;dbname=sgce;porta=3306","root","");
                 
             } catch (PDOException $ex) {
                 echo "Erro: ".$ex->getMessage();

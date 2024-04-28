@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper"> <!-- Aqui será colocado o Aside do Usuário -->
-         <?php include 'aside/aside-adm.php'; ?>
+         <?php include '../aside/aside-adm.php'; ?>
         
 
         

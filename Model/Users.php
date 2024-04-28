@@ -30,18 +30,18 @@ class Users {
     }
 
     public function setId (string $id) : void {
-        $this->name = $id;
+        $this->id = $id;
     }
     public function setName (string $name) : void {
         $this->name = $name;
     }
     public function setMail (string $mail) : void {
-        $this->name = $mail;
+        $this->mail = $mail;
     }
     public function setPassword (string $password) : void {
-        $this->name = $password;
+        $this->password = $password;
     }
     public function setStatus (string $status) : void {
-        $this->name = $status;
+        $this->status = $status;
     }
 }

@@ -13,20 +13,29 @@
         <h1 class="h3 mb-3 fw-normal">Sistema de Gestão de Certificados Eletrônicos </h1>
 
         
-            <form action="#" method="post">
+            <form action="../Controller/insert.php" method="post">
 
 
 
                 <img src="#" alt="" class="mb-4" height="57" width="72">
                 <h1 class="h3 mb-3 mt-2 fw-normal"> Criar Conta </h1>
 
+                <div class="form-floating mt-2">
+
+
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                    <label for="name">Nome</label>
+                    <div id="mailHelp" class="form-text mt-2"> Coloque seu nome completo </div>
+
+                </div>
+
                 
                 <div class="form-floating mt-2">
 
 
-                    <input type="text" class="form-control" id="Mail" name="mail" placeholder="E-mail" required>
+                    <input type="email" class="form-control" id="Mail" name="mail" placeholder="E-mail" required>
                     <label for="Mail">E-mail</label>
-                    <div id="mailHelp" class="form-text mt-2">Nunca compatilharemos seu email com ninguém</div>
+                    <div id="mailHelp" class="form-text mt-2">Certifique-se de colocar o e-mail corretamente</div>
 
                 </div>
 

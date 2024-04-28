@@ -1,6 +1,6 @@
 <?php 
 //incluir a classe
-include_once "./Connect.php";
+include_once "Connect.php";
 
 //declarando a classe-filha da connect
 class UsersDAO extends Connect {
@@ -8,7 +8,7 @@ class UsersDAO extends Connect {
     private $entity = "users";
 
     //método que insere um registro na tabela
-    public function addUser(Users $u) : PDOStatement {
+    public function addUser(Users $u) {
         //instrução SQL
         $query = "INSERT INTO {$this-> entity} (name, mail, password) VALUES(?, ?, ?)";
         //armazena a instrução que será executada no servidor
@@ -22,7 +22,7 @@ class UsersDAO extends Connect {
     }
 
     //método que edita um registro na tabela do usuário
-    public function editUser(Users $u) : PDOStatement { 
+    public function editUser(Users $u) { 
         $query = " UPDATE {$this-> entity} SET name=?, mail=?, password=?, status=? WHERE id=?";
         $stmt = UsersDAO::prepareSQL($query);
        
@@ -36,7 +36,7 @@ class UsersDAO extends Connect {
     }
 
     //método que deleta um reigstro da tabela
-    public function delUser(Users $u) : PDOStatement  {
+    public function delUser(Users $u) {
         $query = "DELETE FROM {$this-> entity} WHERE id=?";
         $stmt = UsersDAO::prepareSQL($query);
         $stmt-> bindValue(1, $u -> getId());
@@ -45,7 +45,7 @@ class UsersDAO extends Connect {
     }
 
     //método que seleciona um registro da tabela
-    public function selectById(Users $u) : PDOStatement {
+    public function selectById(Users $u) {
         $query = "SELECT * FROM {$this-> entity} WHERE id=?";
         $stmt = UsersDAO::prepareSQL($query);
         $stmt-> bindValue(1, $u -> getId());
