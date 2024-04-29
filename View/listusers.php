@@ -42,42 +42,6 @@
                 <div class="container-fluid">
                     <div class="mb-3">
                         <h3 class="fw-bold fs-4 mb-3">Sistema de Gestão de Certificado Eletrônico - Controle de Usuários </h3>
-                        <div class="row">
-                            
-                            
-
-
-                            
-                        </div>
-                        <h3 class="fw-bold fs-4 my-3"> Usuários ADM
-                        </h3>
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr class="highlight">
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">E-mail</th>
-                                            <th scope="col"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-
-
-                                        <tr>
-                                            <td>Nome</td>
-                                            <td>exemplo@gmail.com</td>
-                                            <td>
-                                                <button class="btn btn-outline-danger"> Apagar Usuário </button>
-                                            </td>
-                                            
-                                        </tr>
-                                       
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
 
                         
                     <!--======= USUARIOS CADASTRADOS ======-->    

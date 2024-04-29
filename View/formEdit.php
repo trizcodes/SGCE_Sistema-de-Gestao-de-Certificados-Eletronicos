@@ -87,7 +87,7 @@
 
                                         <div class="form-group col-md-4 mt-2">
                                             <label for="senha">Senha</label>
-                                            <input type="password" class="form-control" id="senha"  value="<?=$result->password?>">
+                                            <input type="text" class="form-control" name="pass" id="senha"  value="<?=$result->password?>">
                                         </div>
 
                                         <div class="form-group col-md-4 mt-2">
