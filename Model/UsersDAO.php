@@ -64,6 +64,40 @@ class UsersDAO extends Connect {
 
     }
 
+    // método logar o usuario no sistema com base no email e a senha
+    public function logar (Users $u) {
+        $query = " SELECT * FROM {$this-> entity} WHERE mail=? AND password=?";
+        $stmt = UsersDAO::prepareSQL($query);
+        $stmt-> bindValue(1, $u -> getMail());
+        $stmt-> bindValue(2, $u -> getPassword());
+        $stmt-> execute();
+
+        if ($stmt -> rowCount()) 
+        {
+            $result = $stmt-> fetch(PDO::FETCH_OBJ);
+            $_SESSION['autenticado'] = true;
+            $_SESSION['usuario'] = $result -> name;
+            $_SESSION['status'] = $result -> status;
+            return true;
+        }
+        
+        else {
+
+            return false;
+        }
+    }
+
+    //método deslogar
+
+    public static function deslogar() {
+        //verifica se o valor da sessão é true
+        if($_SESSION['autenticado']) {
+            //apaga o valor da sessão
+            session_unset();
+            //destrói a sessão
+            session_destroy();
+        }
+    }
 
 }
 

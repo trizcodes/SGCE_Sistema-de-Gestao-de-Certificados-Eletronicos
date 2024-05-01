@@ -101,7 +101,7 @@
                                         </div>
 
                                         <div class="form-group col-md-4 mt-2">
-                                            <label for="status">Status</label>
+                                            <label for="status">Status ( Está ativo no sistema? )</label>
                                             <select class="form-control" name="status" id="status">
                                             <?php 
 

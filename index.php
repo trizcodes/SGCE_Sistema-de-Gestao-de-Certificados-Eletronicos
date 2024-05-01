@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="pt-br" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>SGCE</title>
 </head>
 
@@ -12,18 +13,26 @@
         <main class="w-100 m-auto form-container">
             
         
-            <form action="login.php" method="post">
+            <form action="Controller/login.php" method="post">
 
 
 
                 <img src="#" alt="" class="mb-4" height="57" width="72">
                 <h1 class="h3 mb-3 fw-normal">Sistema de Gestão de Certificados Eletrônicos </h1>
                 <h2 class="h3 mb-3 fw-normal"> Login </h2>
+
+
                 <div class="form-floating">
 
 
-                    <input type="text" class="form-control" id="username" placeholder="Nome de Usuário">
-                    <label for="username">E-mail</label>
+                    <div class="form-floating mt-2">
+
+
+                    <input type="email" class="form-control" id="Mail" name="mail" placeholder="E-mail" required>
+                    <label for="Mail">E-mail</label>
+            
+
+                </div>
 
 
                 </div>
@@ -32,7 +41,8 @@
                 <div class="form-floating mt-2">
 
 
-                    <input type="password" class="form-control" id="password" placeholder="Senha">
+                <input type="password" class="form-control" name="pass" id="Pass" placeholder="Senha" 
+                        aria-describeby="passHelp" minlength="8" maxlength="20" required>
                     <label for="password">Senha</label>
 
                 </div>
